@@ -6,7 +6,7 @@ import Card from './Card'
 class Tarot extends Component {
 
   render () {
-    return <div className='styles'>
+    return <div className='main'>
       <ul className='navigation'>
         <li>
           <Link to='/'>Tarot</Link>
@@ -15,16 +15,14 @@ class Tarot extends Component {
           <Link to='/History'>History</Link>
         </li>
       </ul>
-      <div className='main'>
-        <div className='logo'>
-          <h1>Tarot by Sybil</h1>
-        </div>
-        <div className='board'>
-          <Card />
-        </div>
-
-        <button>Cut the Deck</button>
+      <div className='logo'> logo </div>
+      <div className='board'>
+        <Card />
+        {/* <Card />
+        <Card /> */}
       </div>
+      <button>Cut the Deck</button>
+
     </div>
   }
 }

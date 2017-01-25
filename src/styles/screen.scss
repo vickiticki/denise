@@ -40,6 +40,16 @@ body {
   }
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    margin: 4em;
+  }
+}
+
 ul.navigation {
   display: flex;
   width: 100%;
@@ -51,46 +61,37 @@ ul.navigation {
   }
 }
 
-.main {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
+.logo {
+  height: 130px;
+  width: 100%;
+  background-image: url('../tarotImages/logoBlue2.png');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: transparent;
+  margin: 0;
 }
 
 .board {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  padding: 1em;
 
   .card {
-    height: 250px;
-    width: 200px;
+    height: 220px;
+    width: 175px;
     background-size: cover;
-    margin-bottom: 1em;
+    margin: 0.5em;
     border: 2px solid black;
     border-radius: 5px;
 
     img {
       height: 100%;
       width: 100%;
-      // padding-bottom: -5px;
-      // margin-bottom: -5px;
       border-radius: 5px;
     }
-
-    // &.down {
-    //   img {
-    //     opacity: 0;
-    //   }
-    // }
-    //
-    // &.up {
-    //   img {
-    //     opacity: 1;
-    //     border-radius: 5px;
-    //   }
-    // }
   }
 }

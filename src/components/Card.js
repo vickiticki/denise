@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import data from '../data.js'
+import classNames from 'classNames'
 
 class Card extends Component {
   static propTypes = {
