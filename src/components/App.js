@@ -4,7 +4,14 @@ class App extends Component {
 
   render () {
     return <div>
-      <h1>Hello, World!</h1>
+      <ul>
+        <li>Home</li>
+        <li>History</li>
+      </ul>
+      <div>
+        <h1>Tarot by Sybil</h1>
+
+      </div>
     </div>
   }
 }

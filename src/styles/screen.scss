@@ -13,5 +13,22 @@ body {
 
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
-  background-image: url(./tarotImages/circleBack.jpg);
+  color: white;
+  background-color: black;
+  background-image: url('../tarotImages/circleBack.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-color: black;
+    background-image: url('../tarotImages/phoneBack.png');
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
 }
