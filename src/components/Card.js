@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import data from '../data.js'
-import classNames from 'classNames'
+import cx from 'classNames'
 
 class Card extends Component {
   static propTypes = {
@@ -10,7 +10,7 @@ class Card extends Component {
   }
 
   render () {
-    return <div className='card'>
+    return <div className={cx('card', {'up': true, 'down': false})}>
       {data.cards.map((card, i) => {
         return <div key={i}>
           <img src={card.image} />
