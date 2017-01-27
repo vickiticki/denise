@@ -37,16 +37,6 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  body {
-    background-color: black;
-    background-image: url('../tarotImages/phoneBack.png');
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-  }
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -68,9 +58,14 @@ ul.navigation {
   li {
     list-style: none;
   }
+
+  &:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00c9ff, 0 0 70px #00c9ff, 0 0 80px #00c9ff, 0 0 100px #00c9ff, 0 0 150px #00c9ff;
+    color: cyan;
+  }
 }
 
-.logo {
+h1 {
   font-family: 'neon2';
   font-size: 60px;
   color: cyan;
@@ -112,15 +107,38 @@ ul.navigation {
 
   .down {
     background-color: black;
-    height: 325px;
-    width: 200px;
+    height: 250px;
+    width: 175px;
     margin: 0.5em;
     border-radius: 5px;
     color: white;
+    background-image: url('../tarotImages/cardBack.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
     img {
-      height: 0;
-      width: 0;
+      visibility: hidden;
     }
+  }
+}
+
+.historyP {
+  max-width: 500px;
+}
+
+.copyright {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-color: black;
+    background-image: url('../tarotImages/phoneBack.png');
+    display: flex;
+    align-content: center;
+    flex-direction: column;
   }
 }

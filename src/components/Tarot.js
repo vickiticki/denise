@@ -19,8 +19,6 @@ class Tarot extends Component {
 
       <div className='board'>
         <Card />
-        <Card />
-        <Card />
       </div>
       <button>Cut the Deck</button>
 
