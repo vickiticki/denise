@@ -1,5 +1,10 @@
 @import 'utility';
 
+@font-face {
+  font-family: 'neon2';
+  src: url('../../neon2.ttf'), format('truetype');
+}
+
 $base-text-size: 16px;
 $base-font-family: sans-serif;
 
@@ -55,6 +60,7 @@ ul.navigation {
   width: 100%;
   justify-content: space-between;
   padding-left: 0;
+  font-family: neon2;
 
   li {
     list-style: none;
@@ -62,13 +68,8 @@ ul.navigation {
 }
 
 .logo {
-  height: 130px;
-  width: 100%;
-  background-image: url('../tarotImages/logoBlue2.png');
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-  color: transparent;
+  font-family: 'neon2';
+  color: cyan;
   margin: 0;
 }
 
@@ -83,8 +84,9 @@ ul.navigation {
   .card {
     height: 220px;
     width: 175px;
-    background-size: cover;
+    background-size: contain;
     margin: 0.5em;
+    margin-bottom: 1em;
     border: 2px solid black;
     border-radius: 5px;
 
@@ -93,11 +95,27 @@ ul.navigation {
       width: 100%;
       border-radius: 5px;
     }
+
+    p {
+      visibility: hidden;
+    }
+
+    h5 {
+      visibility: hidden;
+    }
   }
 
-  .cardDown {
+  .down {
     background-color: black;
-    height: 220px;
+    height: 325px;
+    width: 200px;
     margin: 0.5em;
+    border-radius: 5px;
+    color: white;
+
+    img {
+      height: 0;
+      width: 0;
+    }
   }
 }

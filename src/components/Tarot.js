@@ -15,11 +15,12 @@ class Tarot extends Component {
           <Link to='/History'>History</Link>
         </li>
       </ul>
-      <div className='logo'> logo </div>
+      <h1 className='logo'>Tarot with Sybil</h1>
+
       <div className='board'>
         <Card />
-        {/* <Card />
-        <Card /> */}
+        <Card />
+        <Card />
       </div>
       <button>Cut the Deck</button>
 
