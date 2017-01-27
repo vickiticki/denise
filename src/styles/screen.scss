@@ -2,7 +2,9 @@
 
 @font-face {
   font-family: 'neon2';
-  src: url('../../neon2.ttf'), format('truetype');
+  src: url('./neon2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 $base-text-size: 16px;
@@ -60,7 +62,8 @@ ul.navigation {
   width: 100%;
   justify-content: space-between;
   padding-left: 0;
-  font-family: neon2;
+  font-family: 'neon2';
+  color: cyan;
 
   li {
     list-style: none;
@@ -69,8 +72,9 @@ ul.navigation {
 
 .logo {
   font-family: 'neon2';
+  size: 100%;
   color: cyan;
-  margin: 0;
+  margin: 1em;
 }
 
 .board {

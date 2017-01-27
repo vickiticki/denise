@@ -37,7 +37,7 @@ const common = {
       include: [SRC_PATH],
       loader: 'babel'
     }, {
-      test: /\.(png|jpe?g|gif|svg|ttf|eot|woff|woff2)$/,
+      test: /\.(png|jpe?g|gif|svg|ttf)$/,
       loader: 'file'
     }, {
       test: /\.(sass|s?css)$/,
