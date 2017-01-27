@@ -20,7 +20,10 @@ class History extends Component {
         </p>
       </div>
       <footer>
-        <h6 className='copyright'>&copy; 2017 Liz Tiller </h6>
+        <h6 className='copyright'>Tarot with Sybil &copy; 2017 Liz Tiller </h6>
+        <h6 className='copyright'>Based on <span>The Trouble with Dead People</span> by Denise Tiller</h6>
+        <h6 className='copyright'>Card images by <a className='sunnyClockwork' href='http://www.scp-wiki.net/sunny-art-scp-tarot-cards'>SunnyClockwork</a> through SCP Foundation</h6>
+
       </footer>
     </div>
   }
