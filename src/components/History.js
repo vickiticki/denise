@@ -22,7 +22,7 @@ class History extends Component {
       <footer>
         <h6 className='copyright'>Tarot with Sybil &copy; 2017 Liz Tiller </h6>
         <h6 className='copyright'>Based on <span>The Trouble with Dead People</span> by Denise Tiller</h6>
-        <h6 className='copyright'>Card images based on the content of the<a href='http://www.scp-wiki.net/'> SCP Foundation [www.scp-wiki.net]</a>, under the<a href='https://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons — Attribution-ShareAlike 3.0 Unported— CC BY-SA 3.0 [creativecommons.org]</a>.</h6>
+        <h6 className='copyright'>Card images based on the content of the<a href='http://www.scp-wiki.net/'> SCP Foundation [www.scp-wiki.net]</a>, under the <a href='https://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons — Attribution-ShareAlike 3.0 Unported— CC BY-SA 3.0 [creativecommons.org]</a>.</h6>
 
       </footer>
     </div>
