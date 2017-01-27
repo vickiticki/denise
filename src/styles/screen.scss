@@ -88,6 +88,87 @@ h1 {
   color: cyan;
   margin: 1em;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00c9ff, 0 0 70px #00c9ff, 0 0 80px #00c9ff, 0 0 100px #00c9ff, 0 0 150px #00c9ff;
+  -webkit-animation: neonAnimation 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonAnimation 1.5s ease-in-out infinite alternate;
+  animation: neonAnimation 1.5s ease-in-out infinite alternate;
+  // /*No prefix*/
+  @keyframes neonAnimation {
+    from {
+      text-shadow:
+        0 0 10px #fff,
+        0 0 20px  #fff,
+        0 0 30px  #fff,
+        0 0 40px  #22b0ff,
+        0 0 70px  #22b0ff,
+        0 0 80px  #22b0ff,
+        0 0 100px #22b0ff,
+        0 0 150px #22b0ff;
+    }
+
+    to {
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #22b0ff,
+        0 0 35px #22b0ff,
+        0 0 40px #22b0ff,
+        0 0 50px #22b0ff,
+        0 0 75px #22b0ff;
+    }
+  }
+  // /*Webkit prefix*/
+  @-webkit-keyframes neonAnimation {
+    from {
+      text-shadow:
+        0 0 10px #fff,
+        0 0 20px  #fff,
+        0 0 30px  #fff,
+        0 0 40px  #22b0ff,
+        0 0 70px  #22b0ff,
+        0 0 80px  #22b0ff,
+        0 0 100px #22b0ff,
+        0 0 150px #22b0ff;
+    }
+
+    to {
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #22b0ff,
+        0 0 35px #22b0ff,
+        0 0 40px #22b0ff,
+        0 0 50px #22b0ff,
+        0 0 75px #22b0ff;
+    }
+  }
+  // /*Moz prefix*/
+  @-moz-keyframes neonAnimation {
+    from {
+      text-shadow:
+        0 0 10px #fff,
+        0 0 20px  #fff,
+        0 0 30px  #fff,
+        0 0 40px  #22b0ff,
+        0 0 70px  #22b0ff,
+        0 0 80px  #22b0ff,
+        0 0 100px #22b0ff,
+        0 0 150px #22b0ff;
+    }
+
+    to {
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #22b0ff,
+        0 0 35px #22b0ff,
+        0 0 40px #22b0ff,
+        0 0 50px #22b0ff,
+        0 0 75px #22b0ff;
+    }
+  }
 }
 
 .board {
