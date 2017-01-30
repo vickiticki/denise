@@ -1,31 +1,33 @@
 import React, { Component } from 'react'
 import cx from 'classNames'
-import data from '../data.js'
-import shuffle from 'shuffle-array'
+// import data from '../data.js'
+// import shuffle from 'shuffle-array'
 
 class Card extends Component {
-  constructor () {
-    super()
-    this.setState = {
-      cards: shuffle(data.cards)
 
-    }
+  state = {
+    up: false
   }
 
   static propTypes = {
-    handleClick: React.PropTypes.func
+    image: React.PropTypes.string,
+    fortune: React.PropTypes.string
+  }
+
+  handleClick () {
+    this.setState({
+      up: true
+    })
   }
 
   render () {
-    return <div className='cardItem'
-      onClick={() => this.props.handleClick()}>
-      {data.cards.map((card, i) => {
-        return <div key={i}
-          className={cx('card', {down: true})}>
-          <img src={card.image} />
-          <p>{card.fortune}</p>
-        </div>
+    return <div
+      className={cx('cardItem', {
+        down: !this.state.up
       })}
+      onClick={() => this.handleClick()}>
+      <img src={this.props.image} />
+      <p>{this.props.fortune}</p>
     </div>
   }
 }
