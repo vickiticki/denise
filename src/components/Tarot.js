@@ -8,8 +8,12 @@ class Tarot extends Component {
   constructor () {
     super()
     this.state = {
-      card: []
+      card: true
     }
+  }
+
+  flip () {
+    this.state.true ? this.state.false : this.state.true
   }
 
   render () {
@@ -17,7 +21,7 @@ class Tarot extends Component {
       <h1 className='logo'>Tarot with Sybil</h1>
 
       <div className='board'>
-        <Card />
+        <Card handleClick={() => this.flip} />
         {/* <Card />
         <Card /> */}
       </div>
