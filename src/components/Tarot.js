@@ -1,27 +1,27 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 
 import Card from './Card'
+// import shuffle from 'array-shuffle'
+// import cx from 'classNames'
 
 class Tarot extends Component {
+  constructor () {
+    super()
+    this.state = {
+      card: []
+    }
+  }
 
   render () {
     return <div className='main'>
-      <ul className='navigation'>
-        <li>
-          <Link to='/'>Tarot</Link>
-        </li>
-        <li>
-          <Link to='/History'>History</Link>
-        </li>
-      </ul>
       <h1 className='logo'>Tarot with Sybil</h1>
 
       <div className='board'>
         <Card />
+        {/* <Card />
+        <Card /> */}
       </div>
       <button>Cut the Deck</button>
-
     </div>
   }
 }

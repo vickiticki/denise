@@ -112,7 +112,7 @@ const data = {
       title: 'The Moon',
       image: require('./tarotImages/moon.jpg'),
       description: 'This is a card of duality and emotional turmoil.  It can be a card of warning or a card of genius and powerful creativity.',
-      fortune: 'You are in for a rollercoaster ride of emotions. Don\'t wallow in misery, go through it. Trust your instincts but remember people and situations may not be what they seem.  Rely on your senses. Your intuitive abilities are high so be open to intuitive messages. You may be asked to take a risk and the situation may not be clear. You can turn this situation into something wonderful.'
+      fortune: 'You are in for a rollercoaster ride of emotions. Don\'t wallow in misery, go through it. Trust your instincts but remember people and situations may not be what they seem. Your intuitive abilities are high so be open to intuitive messages. You may be asked to take a risk and the situation may not be clear. You can turn this situation into something wonderful.'
     },
     {
       title: 'The Sun',
