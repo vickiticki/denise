@@ -220,10 +220,12 @@ h1 {
       position: relative;
       height: 100%;
       width: 100%;
+      transition: 0.5s ease-in-out;
     }
 
     p {
       color: white;
+      transition: 0.5s ease-in-out;
     }
   }
 

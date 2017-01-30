@@ -26,6 +26,12 @@ class Tarot extends Component {
     })
   }
 
+  reset () {
+    this.setState({
+      dealt: []
+    })
+  }
+
   render () {
     return <div className='main'>
       <h1 className='logo'>Tarot with Sybil</h1>
@@ -35,20 +41,10 @@ class Tarot extends Component {
           return <Card key={i} image={card.image} fortune={card.fortune} />
         })}
       </div>
-      <button onClick={() => this.deal()}>Deal</button>
+      {this.state.dealt.length === 3 ? <button type='reset' name='reset'
+        onClick={() => this.reset()}>Cut the Deck</button> : <button onClick={() => this.deal()}>Deal</button>}
     </div>
   }
 }
 
 export default Tarot
-
-// this.setState = {
-//   cards: shuffle(data.cards)
-
-// {data.cards.map((card, i) => {
-//   return <div key={i}
-//     className={cx('card', {down: true})}>
-//     <img src={card.image} />
-//     <p>{card.fortune}</p>
-//   </div>
-// })}
