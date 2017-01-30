@@ -249,8 +249,12 @@ h1 {
   body {
     background-color: black;
     background-image: url('../tarotImages/phoneBack.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
     display: flex;
     align-content: center;
     flex-direction: column;
+    text-align: center;
   }
 }

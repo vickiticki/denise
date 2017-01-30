@@ -4,6 +4,8 @@ import { Router, Route, browserHistory } from 'react-router'
 import Tarot from './Tarot'
 import History from './History'
 
+import shuffle from 'array-shuffle'
+
 class App extends Component {
 
   render () {

@@ -5,7 +5,8 @@ import cx from 'classNames'
 class Card extends Component {
   static propTypes = {
     image: React.PropTypes.string,
-    handleClick: React.PropTypes.func
+    handleClick: React.PropTypes.func,
+    card: React.PropTypes.string
   }
 
   render () {
