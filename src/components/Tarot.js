@@ -41,8 +41,9 @@ class Tarot extends Component {
           return <Card key={i} image={card.image} fortune={card.fortune} />
         })}
       </div>
-      {this.state.dealt.length === 3 ? <button type='reset' name='reset'
-        onClick={() => this.reset()}>Cut the Deck</button> : <button onClick={() => this.deal()}>Deal</button>}
+      {this.state.dealt.length === 3 ? <button type='reset' name='Reset'
+        onClick={() => this.reset()}>Cut the Deck</button> : <button type='submit' name='Deal'
+          onClick={() => this.deal()}>Deal</button>}
     </div>
   }
 }
