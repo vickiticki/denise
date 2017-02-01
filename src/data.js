@@ -106,7 +106,7 @@ const data = {
       title: 'The Star',
       image: require('./tarotImages/star.jpg'),
       description: 'The Star represents hope, peace, and strength.',
-      fortune: 'Your luck is changing.  You will feel inspired, confidant, and hopeful. Creativity flows. Make a list of what you want to accomplish and do it. Get in touch with your spirituality, shine and share your gifts. Everything is great.'
+      fortune: 'Your luck is changing.  You will feel inspired, confident, and hopeful. Creativity flows. Make a list of what you want to accomplish and do it. Get in touch with your spirituality, shine and share your gifts. Everything is great.'
     },
     {
       title: 'The Moon',
