@@ -247,6 +247,21 @@ h1 {
       visibility: hidden;
     }
   }
+
+  .blur {
+    img {
+      filter: brightness(0.4) blur(5px) opacity(0.9);
+      position: relative;
+      height: 100%;
+      width: 100%;
+      transition: 0.5s ease-in-out;
+    }
+
+    p {
+      color: white;
+      transition: 0.5s ease-in-out;
+    }
+  }
 }
 
 button {
@@ -307,11 +322,6 @@ button {
 
   .board {
     flex-direction: column;
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    align-items: center;
-    padding: 1em;
   }
 
   .cardItem {

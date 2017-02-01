@@ -6,7 +6,8 @@ import cx from 'classNames'
 class Card extends Component {
 
   state = {
-    up: false
+    up: false,
+    blurred: false
   }
 
   static propTypes = {
@@ -15,15 +16,22 @@ class Card extends Component {
   }
 
   handleClick () {
-    this.setState({
-      up: true
-    })
+    if (this.state.up) {
+      this.setState({
+        blurred: true
+      })
+    } else {
+      this.setState({
+        up: true
+      })
+    }
   }
 
   render () {
     return <div
       className={cx('cardItem', {
-        down: !this.state.up
+        down: !this.state.up,
+        blur: this.state.blurred
       })}
       onClick={() => this.handleClick()}>
       <img src={this.props.image} />
