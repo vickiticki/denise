@@ -1,5 +1,7 @@
 @import 'utility';
 
+@import url('https://fonts.googleapis.com/css?family=Caudex|Yrsa');
+
 @font-face {
   font-family: 'neon2';
   src: url('./neon2.ttf') format('truetype');
@@ -8,7 +10,7 @@
 }
 
 $base-text-size: 16px;
-$base-font-family: sans-serif;
+$base-font-family: 'Caudex', serif;
 
 html {
   text-size-adjust: 100%;
@@ -47,6 +49,16 @@ body {
   }
 }
 
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70vw;
+  text-align: center;
+  background-color: transparentize(black, 0.5);
+  border-radius: 10px;
+}
+
 .history {
   display: flex;
   flex-direction: column;
@@ -57,9 +69,10 @@ ul.navigation {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-left: 0;
+  // padding-left: 0;
   font-family: 'neon2';
   color: cyan;
+  padding-left: 5px;
 
   li {
     list-style: none;
@@ -193,7 +206,6 @@ h1 {
     margin-bottom: 1em;
     border-radius: 5px;
     position: relative;
-    border: 1px solid white;
     align-content: center;
 
     img {
@@ -220,11 +232,14 @@ h1 {
     background-color: black;
     margin: 0.5em;
     border-radius: 5px;
-    color: white;
     background-image: url('../tarotImages/cardBack.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 
     img {
       visibility: hidden;

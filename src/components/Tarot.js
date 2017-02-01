@@ -36,13 +36,20 @@ class Tarot extends Component {
     return <div className='main'>
       <h1 className='logo'>Tarot with Sybil</h1>
 
-      <div className='board'>
+      {this.state.dealt.length === 0
+        ? <div className='instructions'>
+          <p> Come in, sit down and relax.
+          </p>
+          <p> Simply click the cards to see what they have to.</p>
+        </div>
+      : <div className='board'>
         {this.state.dealt.map((card, i) => {
           return <Card key={i} image={card.image} fortune={card.fortune} />
         })}
-      </div>
+      </div>}
+
       {this.state.dealt.length === 3 ? <button type='reset' name='Reset'
-        onClick={() => this.reset()}>Cut the Deck</button> : <button type='submit' name='Deal'
+        onClick={() => this.reset()}>New Cards</button> : <button type='submit' name='Deal'
           onClick={() => this.deal()}>Deal</button>}
     </div>
   }
