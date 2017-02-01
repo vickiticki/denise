@@ -20,6 +20,10 @@ class Card extends Component {
       this.setState({
         blurred: true
       })
+    } if (this.state.blurred) {
+      this.setState({
+        blurred: false
+      })
     } else {
       this.setState({
         up: true

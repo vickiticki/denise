@@ -201,6 +201,7 @@ h1 {
       width: 100%;
       border-radius: 5px;
       position: center;
+      transition: 0.5s ease-in-out;
     }
 
     p {
@@ -211,6 +212,7 @@ h1 {
       font-size: 14px;
       color: transparent;
       margin: 1em;
+      transition: 0.5s ease-in-out;
     }
   }
 
