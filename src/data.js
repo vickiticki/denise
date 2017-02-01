@@ -94,7 +94,7 @@ const data = {
       title: 'The Devil',
       image: require('./tarotImages/devil.jpg'),
       description: 'The Devil represents greed, temptation, and materialism.',
-      fortune: 'You may be in a destruction situation.  Walk away from negative people who drain your energy. It\'s not worth trying to fix the situation, you have options. Be honest about your weakness.'
+      fortune: 'You may be in a destructive situation.  Walk away from negative people who drain your energy. It\'s not worth trying to fix the situation, you have options. Be honest about your weakness.'
     },
     {
       title: 'The Tower',
