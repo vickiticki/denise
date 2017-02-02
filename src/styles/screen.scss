@@ -360,10 +360,9 @@ button {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 600px) {
   body {
-    background-image: url ('../tarotImages/sideBack.jpeg');
-    background-position: center;
+    background-image: url ('../tarotImages/sideBack.png');
     background-size: cover;
     background-repeat: repeat;
 
