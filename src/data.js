@@ -4,13 +4,13 @@ const data = {
       title: 'The Fool',
       image: require('./tarotImages/theFool.jpg'),
       description: 'The Fool has the innocence, spontaneity, and purity of a child. He\'s about to start a journey.',
-      fortune: 'It\'s time to a new beginning. It could be a new relationship, career, or a spiritual journey.  There may be dangers ahead, but if you look where you are going, the results will be good.  Trust yourself.'
+      fortune: 'It\'s time for a new beginning. It could be a new relationship, career, or a spiritual journey.  There may be dangers ahead, but if you look where you are going, the results will be good.  Trust yourself.'
     },
     {
       title: 'The Magician',
       image: require('./tarotImages/magician.jpg'),
       description: 'The Magician is about self-empowerment and action.',
-      fortune: 'Use your boundless energy and power to take action and make a difference. It\'s usually a positive card to improve your life, your love, your finances, your health, or your spirituality. It\'s time to move forward and use your talents.'
+      fortune: 'Use your boundless energy and power to take action and make a difference. This is usually a positive sign to improve your life, your love, your finances, your health, or your spirituality. It\'s time to move forward and use your talents.'
     },
     {
       title: 'The High Priestess',
@@ -82,13 +82,13 @@ const data = {
       title: 'Death',
       image: require('./tarotImages/death.jpg'),
       description: 'This card is about transformation and change, not necessarily physical death.',
-      fortune: 'This is the end of one era and the beginning of a new one.  Expect fast and deep transformation.  Let go of what you don\'t need. Things may seem out of control, accept change. Change brings renewal.  You may experience sorrow, but in the end, you will experience a rebirth.'
+      fortune: 'This is the end of one era and the beginning of a new one.  Expect fast and deep transformation.  Let go of what you don\'t need. Things may seem out of control; accept the changes. Change brings renewal.  You may experience sorrow, but in the end, you will experience a rebirth.'
     },
     {
       title: 'Temperance',
       image: require('./tarotImages/temperance.jpg'),
       description: 'This is a call for spiritual connection and service.',
-      fortune: 'You are in a volatile situation.  Blend opposing forces to create a solution.  Accept both sides of the situation and choose what feel natural. Connect with your guides, this may be the start of a spiritual journey.  The situation requires balance and patience.'
+      fortune: 'You are in a volatile situation.  Blend opposing forces to create a solution.  Accept both sides of the situation and choose what feels natural. Connect with your guides, this may be the start of a spiritual journey.  The situation requires balance and patience.'
     },
     {
       title: 'The Devil',
@@ -100,7 +100,7 @@ const data = {
       title: 'The Tower',
       image: require('./tarotImages/tower.jpg'),
       description: 'The Tower represent change beyond your control.',
-      fortune: 'The Tower can represent the collapse of relationship or a dream.  Don\'t panic. A structure built on false beliefs can\'t stand.  Pay attention to what you are doing and prepare for change. When things collapse, you can experience deep insight and see how to build a better foundation.'
+      fortune: 'The Tower can represent the collapse of a relationship or a dream.  Don\'t panic. A structure built on false beliefs can\'t stand.  Pay attention to what you are doing and prepare for change. When things collapse, you can experience deep insight and see how to build a better foundation.'
     },
     {
       title: 'The Star',
@@ -112,7 +112,7 @@ const data = {
       title: 'The Moon',
       image: require('./tarotImages/moon.jpg'),
       description: 'This is a card of duality and emotional turmoil.  It can be a card of warning or a card of genius and powerful creativity.',
-      fortune: 'You are in for a rollercoaster ride of emotions. Don\'t wallow in misery, go through it. Trust your instincts but remember people and situations may not be what they seem. Your intuitive abilities are high so be open to intuitive messages. You may be asked to take a risk and the situation may not be clear. You can turn this situation into something wonderful.'
+      fortune: 'You are on an emotional rollercoaster. Don\'t wallow in misery, go through it. Trust your instincts but remember people and situations may not be what they seem. Your intuitive abilities are high so trust your intuition. You may be asked to take a risk and the situation may not be clear, but you can turn it into something wonderful.'
     },
     {
       title: 'The Sun',

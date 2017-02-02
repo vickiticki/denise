@@ -40,7 +40,7 @@ class Tarot extends Component {
         ? <div className='instructions'>
           <p> Come in, sit down and relax.
           </p>
-          <p> Simply click the cards to see what they have to.</p>
+          <p> Simply click the cards to see what they have to say.</p>
         </div>
       : <div className='board'>
         {this.state.dealt.map((card, i) => {
