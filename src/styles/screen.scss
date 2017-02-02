@@ -1,5 +1,4 @@
 @import 'utility';
-
 @import url('https://fonts.googleapis.com/css?family=Caudex|Yrsa');
 
 @font-face {
@@ -205,6 +204,7 @@ h1 {
     background-size: contain;
     margin-bottom: 1em;
     border-radius: 5px;
+    border: 1px solid white;
     position: relative;
     align-content: center;
     -webkit-transform-style: preserve-3d;
