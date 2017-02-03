@@ -13,6 +13,9 @@ class Layout extends Component {
           <Link to='/'>Tarot</Link>
         </li>
         <li>
+          <Link to='/Home'>Home</Link>
+        </li>
+        <li>
           <Link to='/History'>History</Link>
         </li>
       </ul>
