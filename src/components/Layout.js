@@ -10,10 +10,10 @@ class Layout extends Component {
     return <div className='main'>
       <ul className='navigation'>
         <li>
-          <Link to='/'>Home</Link>
+          <Link to='/'>Tarot</Link>
         </li>
         <li>
-          <Link to='/Tarot'>Tarot</Link>
+          <Link to='/About'>About</Link>
         </li>
         <li>
           <Link to='/History'>History</Link>
