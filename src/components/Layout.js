@@ -19,7 +19,7 @@ class Layout extends Component {
           <Link to='/History'>History</Link>
         </li>
         <li>
-          <Link to='/Trouble'>The Trouble with Dead People</Link>
+          <Link to='/Trouble'>Book</Link>
         </li>
       </ul>
       <main>

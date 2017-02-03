@@ -428,6 +428,12 @@ button {
     font-size: 30px;
   }
 
+  ul.navigation {
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+  }
+
   .board {
     flex-direction: column;
   }
@@ -459,17 +465,5 @@ button {
 
   .historyP {
     margin: 1em;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    background-image: url ('../tarotImages/sideBack.png');
-    background-size: cover;
-    background-repeat: repeat;
-
-    .board {
-      flex-direction: column;
-    }
   }
 }
