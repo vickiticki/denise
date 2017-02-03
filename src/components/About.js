@@ -10,6 +10,7 @@ class About extends Component {
           <div className='headShot'>
             <img src='https://raw.githubusercontent.com/lizthrilla/tarot/master/src/denisePic.jpg' />
           </div>
+          <h3> Denise Tiller</h3>
           <ul className='followMe'>
             <li>
               <i className='fa fa-wordpress' aria-hidden='true' />
