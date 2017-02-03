@@ -10,7 +10,6 @@ class Home extends Component {
           <div className='headShot'>
             <img src='../src/denisePic.jpg' />
           </div>
-          <h3>Follow me </h3>
           <ul className='followMe'>
             <li>
               <i className='fa fa-wordpress' aria-hidden='true' />

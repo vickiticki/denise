@@ -323,9 +323,31 @@ h1 {
         width: 100%;
       }
 
-      h3 {
-        text-align: center;
-        align-content: center;
+      // h3 {
+      //   text-align: center;
+      //   align-content: center;
+      //   margin: auto;
+      // }
+    }
+
+    .followMe {
+      list-style: none;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 1em;
+
+        a,
+        a:visited,
+        a:active, {
+          text-decoration: none;
+          color: white;
+          text-align: center;
+        }
       }
     }
   }
@@ -336,26 +358,11 @@ h1 {
     margin-top: -2em;
     padding-top: -1em;
   }
-  // .followMe {
-  //   list-style: none;
-  //   text-align: center;
-  //   display: flex;
-  //   flex-direction: row;
-  //   margin: 0;
-  //   padding: 0;
-  //
-  //   li {
-  //     margin: 1em;
-  //
-  //     a,
-  //     a:visited,
-  //     a:active, {
-  //       text-decoration: none;
-  //       color: white;
-  //       text-align: center;
-  //     }
-  //   }
-  // }
+}
+
+.about2 {
+  background: transparentize(black, 0.3);
+  padding: 1em;
 }
 
 button {
