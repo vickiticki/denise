@@ -104,6 +104,7 @@ h1 {
   text-align: center;
   font-family: 'neon2';
   font-size: 60px;
+  margin: 0.5em;
   color: cyan;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00c9ff, 0 0 70px #00c9ff, 0 0 80px #00c9ff, 0 0 100px #00c9ff, 0 0 150px #00c9ff;
   -webkit-animation: neonAnimation 1.5s ease-in-out infinite alternate;
@@ -270,6 +271,93 @@ h1 {
   }
 }
 
+.synopsis {
+  width: 75vw;
+  padding: 0;
+  padding-left: 10px;
+  margin-left: 1em;
+  background-color: transparentize(black, 0.5);
+  border-radius: 10px;
+}
+
+.toGame {
+  text-align: center;
+  font-family: 'neon2';
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: cyan;
+  text-decoration: none;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00c9ff, 0 0 70px #00c9ff, 0 0 80px #00c9ff, 0 0 100px #00c9ff, 0 0 150px #00c9ff;
+  background-color: black;
+  border: none;
+  box-shadow: 1px 4px 15px cyan;
+
+  &:hover {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00c9ff, 0 0 70px #00c9ff, 0 0 80px #00c9ff, 0 0 100px #00c9ff, 0 0 150px #00c9ff;
+  }
+
+  a,
+  a:visited,
+  & a:active, {
+    text-decoration: none;
+    color: cyan;
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  .profile {
+    .headShot {
+      height: 275px;
+      width: 225px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      h3 {
+        text-align: center;
+        align-content: center;
+      }
+    }
+  }
+
+  .about1 {
+    width: 50vw;
+    margin: 1em;
+    margin-top: -2em;
+    padding-top: -1em;
+  }
+  // .followMe {
+  //   list-style: none;
+  //   text-align: center;
+  //   display: flex;
+  //   flex-direction: row;
+  //   margin: 0;
+  //   padding: 0;
+  //
+  //   li {
+  //     margin: 1em;
+  //
+  //     a,
+  //     a:visited,
+  //     a:active, {
+  //       text-decoration: none;
+  //       color: white;
+  //       text-align: center;
+  //     }
+  //   }
+  // }
+}
+
 button {
   text-align: center;
   font-family: 'neon2';
@@ -290,6 +378,9 @@ button {
 
 .historyP {
   max-width: 90vw;
+  background-color: transparentize(black, 0.5);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .copyright {

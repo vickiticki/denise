@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import Card from './Card'
 import shuffle from 'array-shuffle'
-// import cx from 'classNames'
 import data from '../data.js'
 
 class Tarot extends Component {
