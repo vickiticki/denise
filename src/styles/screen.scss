@@ -44,7 +44,7 @@ body {
   align-items: center;
 
   button {
-    margin: 4em;
+    margin: 2em;
   }
 }
 
@@ -289,7 +289,7 @@ button {
 }
 
 .historyP {
-  max-width: 500px;
+  max-width: 90vw;
 }
 
 .copyright {
@@ -324,6 +324,10 @@ button {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+  }
+
+  h1 {
+    font-size: 30px;
   }
 
   .board {

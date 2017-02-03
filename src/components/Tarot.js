@@ -38,8 +38,8 @@ class Tarot extends Component {
 
       {this.state.dealt.length === 0
         ? <div className='instructions'>
-          <p> Come in, sit down and relax.
-          </p>
+          <p> Welcome to my online reading room. I am Sybil, Seer and high Priestess of Seidr-the ancient Norse magick religion. I am a descendant of Freja, Goddess of beauty, love, war, and death, leader of the Valkyries. I was born with the gift of prophecy and magick. </p>
+          <p>Instructions: before dealing the cards, relax and open your mind to your inner energy.  Carefully consider your question; as you look at your cards, study the image as well as the prophecy. What message does the image give you? Write down your question and result to contemplate later.</p>
           <p> Simply click the cards to see what they have to say.</p>
         </div>
       : <div className='board'>
