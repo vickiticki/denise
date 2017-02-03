@@ -8,7 +8,7 @@ class Home extends Component {
       <div className='top'>
         <div className='profile'>
           <div className='headShot'>
-            <img src='../src/denisePic.png' />
+            <img src='https://raw.githubusercontent.com/lizthrilla/tarot/master/src/denisePic.jpg' />
           </div>
           <ul className='followMe'>
             <li>
