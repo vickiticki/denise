@@ -33,7 +33,7 @@ class Tarot extends Component {
 
   render () {
     return <div className='main'>
-      <h1 className='logo'>Tarot with Sybil</h1>
+      <h1 className='logo'>T<span className='flick'>a</span>rot with Sybil</h1>
 
       {this.state.dealt.length === 0
         ? <div className='instructions'>

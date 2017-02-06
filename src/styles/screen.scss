@@ -111,6 +111,7 @@ h1 {
   -moz-animation: neonAnimation 1.5s ease-in-out infinite alternate;
   animation: neonAnimation 1.5s ease-in-out infinite alternate;
   // /*No prefix*/
+
   @keyframes neonAnimation {
     from {
       text-shadow:
@@ -186,6 +187,31 @@ h1 {
         0 0 40px #22b0ff,
         0 0 50px #22b0ff,
         0 0 75px #22b0ff;
+    }
+  }
+
+  span.flick {
+    animation: flicker 0.1s 1s ease-in-out infinite;
+    animation-play-state: running, paused, running;
+
+    @keyframes flicker {
+      from {
+        color: transparentize(#fff, 0.5);
+        text-shadow: none;
+      }
+
+      to {
+        color: cyan;
+        text-shadow:
+          0 0 20px #fff,
+          0 0 30px  #fff,
+          0 0 40px  #fff,
+          0 0 50px  #22b0ff,
+          0 0 80  #22b0ff,
+          0 0 90  #22b0ff,
+          0 0 110 #22b0ff,
+          0 0 160 #22b0ff;
+      }
     }
   }
 }
@@ -309,7 +335,7 @@ h1 {
 .top {
   display: flex;
   flex-direction: row;
-  margin-bottom: 0;
+  margin: 0;
 
   .profile {
     flex-direction: column;
@@ -339,7 +365,9 @@ h1 {
       padding: 0;
 
       li {
-        margin: 1em;
+        margin-bottom: 0;
+        margin-top: 5px;
+        flex: 1;
 
         a,
         a:visited,
@@ -355,12 +383,24 @@ h1 {
   .about1 {
     width: 50vw;
     background: transparentize(black, 0.3);
+    margin-left: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+    border-radius: 10px;
+
+    p {
+      margin-top: 0;
+      padding: 5px;
+    }
   }
 }
 
 .about2 {
   background: transparentize(black, 0.3);
-  width: 75vw;
+  width: 80vw;
+  border-radius: 10px;
+  // margin: 0;
+  // padding: 0;
 }
 
 button {
