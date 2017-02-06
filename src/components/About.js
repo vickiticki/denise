@@ -13,7 +13,9 @@ class About extends Component {
           <h3> Denise Tiller</h3>
           <ul className='followMe'>
             <li>
-              <i className='fa fa-wordpress' aria-hidden='true' />
+              <a href='http://denisetiller.wordpress.com'>
+                <i className='fa fa-wordpress' aria-hidden='true' />
+              </a>
             </li>
             <li>
               <a href='http://twitter.com/Deftiller'>
