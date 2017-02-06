@@ -137,12 +137,13 @@ h1 {
     }
   }
 
-  span {
+  span.flick {
     font-size: 65px;
-    padding-right: 3px;
-    transform: rotateY(180deg);
+    // padding-right: 3px;
+    transform: rotateZ(10deg);
     transform-origin: 0 0;
-    animation: flicker 0.1s 1s ease-in-out infinite;
+    display: inline-block;
+    animation: flicker 0.1s 2s ease-out infinite;
     animation-play-state: running, paused, running;
 
     @keyframes flicker {
