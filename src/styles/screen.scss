@@ -105,10 +105,9 @@ h1 {
   font-family: 'neon2';
   font-size: 60px;
   margin: 0.5em;
+  position: relative;
   color: cyan;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00c9ff, 0 0 70px #00c9ff, 0 0 80px #00c9ff, 0 0 100px #00c9ff, 0 0 150px #00c9ff;
-  -webkit-animation: neonAnimation 1.5s ease-in-out infinite alternate;
-  -moz-animation: neonAnimation 1.5s ease-in-out infinite alternate;
   animation: neonAnimation 1.5s ease-in-out infinite alternate;
   // /*No prefix*/
 
@@ -137,60 +136,12 @@ h1 {
         0 0 75px #22b0ff;
     }
   }
-  // /*Webkit prefix*/
-  @-webkit-keyframes neonAnimation {
-    from {
-      text-shadow:
-        0 0 10px #fff,
-        0 0 20px  #fff,
-        0 0 30px  #fff,
-        0 0 40px  #22b0ff,
-        0 0 70px  #22b0ff,
-        0 0 80px  #22b0ff,
-        0 0 100px #22b0ff,
-        0 0 150px #22b0ff;
-    }
 
-    to {
-      text-shadow:
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 15px #fff,
-        0 0 20px #22b0ff,
-        0 0 35px #22b0ff,
-        0 0 40px #22b0ff,
-        0 0 50px #22b0ff,
-        0 0 75px #22b0ff;
-    }
-  }
-  // /*Moz prefix*/
-  @-moz-keyframes neonAnimation {
-    from {
-      text-shadow:
-        0 0 10px #fff,
-        0 0 20px  #fff,
-        0 0 30px  #fff,
-        0 0 40px  #22b0ff,
-        0 0 70px  #22b0ff,
-        0 0 80px  #22b0ff,
-        0 0 100px #22b0ff,
-        0 0 150px #22b0ff;
-    }
-
-    to {
-      text-shadow:
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 15px #fff,
-        0 0 20px #22b0ff,
-        0 0 35px #22b0ff,
-        0 0 40px #22b0ff,
-        0 0 50px #22b0ff,
-        0 0 75px #22b0ff;
-    }
-  }
-
-  span.flick {
+  span {
+    font-size: 65px;
+    padding-right: 3px;
+    transform: rotateY(180deg);
+    transform-origin: 0 0;
     animation: flicker 0.1s 1s ease-in-out infinite;
     animation-play-state: running, paused, running;
 
@@ -236,7 +187,23 @@ h1 {
     align-content: center;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    transform: rotateY(180deg) scale3d(-1, 1, 1);
     transition: all ease 1s;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-name: 'cardIn';
+
+    @keyframes cardIn {
+      from {
+        opacity: 0;
+        transform: rotateY(180deg) scale3d(1, 0, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: rotateY(180deg) scale3d(-1, 1, 1);
+      }
+    }
 
     img {
       height: 100%;
@@ -267,10 +234,7 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
 
     img {
       visibility: hidden;
