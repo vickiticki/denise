@@ -13,13 +13,13 @@ class Layout extends Component {
           <Link to='/'>Tarot</Link>
         </li>
         <li>
-          <Link to='/About'>About</Link>
-        </li>
-        <li>
           <Link to='/History'>History</Link>
         </li>
         <li>
           <Link to='/Trouble'>Book</Link>
+        </li>
+        <li>
+          <Link to='/About'>About</Link>
         </li>
       </ul>
       <main>
