@@ -484,4 +484,18 @@ button {
   .historyP {
     margin: 1em;
   }
+
+  .top {
+    flex-direction: column;
+    align-items: center;
+
+    .about1 {
+      width: 80vw;
+    }
+
+    .followMe {
+      margin-bottom: 1em;
+      padding-bottom: 1em;
+    }
+  }
 }
