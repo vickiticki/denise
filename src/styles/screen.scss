@@ -427,7 +427,17 @@ button {
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 30px;
+    // animation: none !important;
+    // transform: none !important;
+
+    @media screen and (max-device-width: 480px) {
+      animation: none;
+    }
+
+    span.flick {
+      animation: none !important;
+    }
   }
 
   ul.navigation {
