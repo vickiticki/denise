@@ -432,7 +432,7 @@ button {
     // transform: none !important;
 
     @media screen and (max-device-width: 480px) {
-      animation: none;
+      // animation: none;
       text-shadow: none;
     }
 
@@ -445,6 +445,11 @@ button {
     flex-wrap: wrap;
     text-align: center;
     margin: auto;
+    text-shadow: none;
+
+    &:hover {
+      text-shadow: none;
+    }
   }
 
   .board {
