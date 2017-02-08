@@ -143,16 +143,15 @@ h1 {
     transform: rotateZ(10deg);
     transform-origin: 0 0;
     display: inline-block;
-    animation: flicker 0.1s 2s ease-out infinite;
-    animation-play-state: running, paused, running;
+    animation: flicker 0.1s 20s linear infinite alternate;
+    transition: none;
+    // animation-play-state: running, paused, running;
 
     @keyframes flicker {
-      from {
-        color: transparentize(#fff, 0.5);
-        text-shadow: none;
-      }
-
-      to {
+      0%,
+      50%,
+      52%,
+      100% {
         color: cyan;
         text-shadow:
           0 0 20px #fff,
@@ -163,6 +162,11 @@ h1 {
           0 0 90  #22b0ff,
           0 0 110 #22b0ff,
           0 0 160 #22b0ff;
+      }
+
+      51% {
+        color: transparentize(#fff, 0.5);
+        text-shadow: none;
       }
     }
   }
