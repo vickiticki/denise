@@ -72,6 +72,7 @@ ul.navigation {
   padding-left: 0;
   font-family: 'neon2';
   color: cyan;
+  font-size: 25px;
 
   li {
     list-style: none;
@@ -165,6 +166,10 @@ h1 {
       }
     }
   }
+}
+
+h2 {
+  margin-top: 0;
 }
 
 .board {
@@ -452,6 +457,7 @@ button {
     text-align: center;
     margin: auto;
     text-shadow: none;
+    font-size: 20px;
 
     &:hover {
       text-shadow: none;
