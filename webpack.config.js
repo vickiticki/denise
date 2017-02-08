@@ -4,6 +4,7 @@ const merge = require('webpack-merge')
 const validate = require('webpack-validator')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 const ROOT_PATH = path.resolve(__dirname)
 const SRC_PATH = path.resolve(ROOT_PATH, 'src')
@@ -20,6 +21,7 @@ const common = {
     publicPath: '/'
   },
   plugins: [
+    new FaviconsWebpackPlugin('./my-logo.png'),
     new HtmlWebpackPlugin({
       template: path.resolve(SRC_PATH, 'index.html'),
       inject: 'body',
@@ -73,7 +75,8 @@ const development = {
   plugins: [
     new webpack.HotModuleReplacementPlugin({ multiStep: true }),
     new webpack.SourceMapDevToolPlugin(),
-    new BrowserSyncPlugin({ proxy: 'http://localhost:8080/' }, { reload: false })
+    new BrowserSyncPlugin({ proxy: 'http://localhost:8080/' }, { reload: false }),
+    new FaviconsWebpackPlugin('./my-logo.png')
   ],
   module: {
     loaders: [{
