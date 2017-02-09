@@ -76,11 +76,11 @@ ul.navigation {
 
   li {
     list-style: none;
-  }
 
-  &:hover {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00c9ff, 0 0 70px #00c9ff, 0 0 80px #00c9ff, 0 0 100px #00c9ff, 0 0 150px #00c9ff;
-    color: cyan;
+    &:hover {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00c9ff, 0 0 70px #00c9ff, 0 0 80px #00c9ff, 0 0 100px #00c9ff, 0 0 150px #00c9ff;
+      color: cyan;
+    }
   }
 
   a {
@@ -342,6 +342,7 @@ h2 {
         margin-bottom: 0;
         margin-top: 5px;
         flex: 1;
+        font-size: 20px;
 
         a,
         a:visited,
@@ -349,6 +350,7 @@ h2 {
           text-decoration: none;
           color: white;
           text-align: center;
+          text-shadow: 0 0 7px black;
         }
       }
     }
